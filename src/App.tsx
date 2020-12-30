@@ -4,7 +4,9 @@ import Button, { ButtonType, ButtonSize } from './components/Button/button';
 function App() {
   return (
     <>
-      <Button btnType={ButtonType.Primary}>Primary</Button>
+      <Button btnType={ButtonType.Primary} onClick={() => console.log('You clicked.')}>
+        Primary
+      </Button>
       <Button btnType={ButtonType.Danger}>Danger</Button>
       <Button btnType={ButtonType.Default}>Default</Button>
       <Button btnType={ButtonType.Link}>Link</Button>

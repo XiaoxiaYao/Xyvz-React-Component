@@ -7,9 +7,11 @@ function App() {
   return (
     <>
       <Menu defaultIndex={0}>
-        <MenuItem>cool link 1</MenuItem>
-        <MenuItem>cool link 1</MenuItem>
-        <MenuItem>cool link 1</MenuItem>
+        <MenuItem index={0}>cool link 1</MenuItem>
+        <MenuItem index={1} disabled>
+          cool link 1
+        </MenuItem>
+        <MenuItem index={2}>cool link 1</MenuItem>
       </Menu>
 
       <Button btnType={ButtonType.Primary} onClick={() => console.log('You clicked.')}>

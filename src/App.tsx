@@ -9,7 +9,15 @@ function App() {
       <Menu defaultIndex={0}>
         <MenuItem index={0}>cool link 1</MenuItem>
         <MenuItem index={1} disabled>
-          cool link 1
+          cool link 2
+        </MenuItem>
+        <MenuItem index={2}>cool link 1</MenuItem>
+      </Menu>
+
+      <Menu defaultIndex={0} mode="vertical">
+        <MenuItem index={0}>cool link 1</MenuItem>
+        <MenuItem index={1} disabled>
+          cool link 2
         </MenuItem>
         <MenuItem index={2}>cool link 1</MenuItem>
       </Menu>

@@ -1,9 +1,17 @@
 import React from 'react';
 import Button, { ButtonType, ButtonSize } from './components/Button/button';
+import Menu from './components/Menu/menu';
+import MenuItem from './components/Menu/menuItem';
 
 function App() {
   return (
     <>
+      <Menu defaultIndex={0}>
+        <MenuItem>cool link 1</MenuItem>
+        <MenuItem>cool link 1</MenuItem>
+        <MenuItem>cool link 1</MenuItem>
+      </Menu>
+
       <Button btnType={ButtonType.Primary} onClick={() => console.log('You clicked.')}>
         Primary
       </Button>

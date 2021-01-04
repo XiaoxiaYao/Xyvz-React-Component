@@ -7,19 +7,15 @@ function App() {
   return (
     <>
       <Menu defaultIndex={0} className="test">
-        <MenuItem index={0}>cool link 1</MenuItem>
-        <MenuItem index={1} disabled>
-          cool link 2
-        </MenuItem>
-        <MenuItem index={2}>cool link 1</MenuItem>
+        <MenuItem>cool link 1</MenuItem>
+        <MenuItem disabled>cool link 2</MenuItem>
+        <MenuItem>cool link 1</MenuItem>
       </Menu>
 
       <Menu defaultIndex={0} mode="vertical">
-        <MenuItem index={0}>cool link 1</MenuItem>
-        <MenuItem index={1} disabled>
-          cool link 2
-        </MenuItem>
-        <MenuItem index={2}>cool link 1</MenuItem>
+        <MenuItem>cool link 1</MenuItem>
+        <MenuItem disabled>cool link 2</MenuItem>
+        <MenuItem>cool link 1</MenuItem>
       </Menu>
 
       <Button btnType={ButtonType.Primary} onClick={() => console.log('You clicked.')}>

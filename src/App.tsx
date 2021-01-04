@@ -6,7 +6,7 @@ import MenuItem from './components/Menu/menuItem';
 function App() {
   return (
     <>
-      <Menu defaultIndex={0}>
+      <Menu defaultIndex={0} className="test">
         <MenuItem index={0}>cool link 1</MenuItem>
         <MenuItem index={1} disabled>
           cool link 2

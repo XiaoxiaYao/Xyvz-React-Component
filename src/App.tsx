@@ -7,7 +7,7 @@ import SubMenu from './components/Menu/submenu';
 function App() {
   return (
     <>
-      <Menu defaultIndex={0} className="test">
+      <Menu defaultIndex="0" className="test">
         <MenuItem>cool link 1</MenuItem>
         <MenuItem disabled>cool link 2</MenuItem>
         <MenuItem>cool link 1</MenuItem>
@@ -17,7 +17,7 @@ function App() {
         </SubMenu>
       </Menu>
 
-      <Menu defaultIndex={0} mode="vertical">
+      <Menu defaultIndex="0" mode="vertical" defaultOpenSubMenus={['3']}>
         <MenuItem>cool link 1</MenuItem>
         <MenuItem disabled>cool link 2</MenuItem>
         <MenuItem>cool link 1</MenuItem>

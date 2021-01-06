@@ -7,7 +7,7 @@ import SubMenu from './components/Menu/submenu';
 function App() {
   return (
     <>
-      <Menu defaultIndex={0} className="test" mode="vertical">
+      <Menu defaultIndex={0} className="test">
         <MenuItem>cool link 1</MenuItem>
         <MenuItem disabled>cool link 2</MenuItem>
         <MenuItem>cool link 1</MenuItem>
@@ -21,6 +21,10 @@ function App() {
         <MenuItem>cool link 1</MenuItem>
         <MenuItem disabled>cool link 2</MenuItem>
         <MenuItem>cool link 1</MenuItem>
+        <SubMenu title="dropdown">
+          <MenuItem>drop down 1</MenuItem>
+          <MenuItem>drop down 2</MenuItem>
+        </SubMenu>
       </Menu>
 
       <Button btnType={ButtonType.Primary} onClick={() => console.log('You clicked.')}>

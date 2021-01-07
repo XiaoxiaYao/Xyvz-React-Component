@@ -1,13 +1,19 @@
 import React from 'react';
 import Button, { ButtonType, ButtonSize } from './components/Button/button';
+import Icon from './components/Icon/icon';
 import Menu from './components/Menu/menu';
 import MenuItem from './components/Menu/menuItem';
 import SubMenu from './components/Menu/submenu';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faCheckSquare, faCoffee);
 
 function App() {
   return (
     <>
-      <Menu defaultIndex="0" className="test">
+      <Icon icon="coffee" theme="danger" size="lg" />
+      {/* <Menu defaultIndex="0" className="test">
         <MenuItem>cool link 1</MenuItem>
         <MenuItem disabled>cool link 2</MenuItem>
         <MenuItem>cool link 1</MenuItem>
@@ -51,7 +57,7 @@ function App() {
 
       <Button btnType={ButtonType.Link} disabled>
         Disabled Link
-      </Button>
+      </Button> */}
     </>
   );
 }
